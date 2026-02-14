@@ -1,11 +1,11 @@
+name = "juntassisepuedemicrofeed" # <--- MUY IMPORTANTE: Pon el nombre exacto que sale en tu panel de Pages
 compatibility_date = "2025-03-14"
 pages_build_output_dir = "public"
 
-[[ env.development.d1_databases ]]
+[d1_databases]
 binding = "FEED_DB"
-database_name = "FEED_DB"
-database_id = "id_placeholder"
+database_name = "FEED_DB" # <--- Asegúrate que en Cloudflare se llame así
+database_id = "tu-id-de-base-de-datos-real" # <--- Pon el ID real que sale en el panel D1
 
 [env.production]
-
-[env.preview]
+# Aquí puedes dejarlo vacío o poner variables específicas
